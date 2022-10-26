@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Inspiración para la página https://www.petfinder.com/pet-adoption/cat-adoption/cat-adoption-tips/ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" type="image/jpg" href="imagen.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagenes/dog-nose.ico">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <script src="jsp.js"></script>
+    <header>
+        <div id="conteiner">
+
+            <nav>
+
+                <ul class="menuh">
+                    <h2>Refugio Narices</h2>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Adoptar</a>
+                        <ul class="menuv">
+                            <li><a href="perros.html">Perros</a></li>
+                            <li><a href="gatos.html">Gatos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="consejos.html">Consejos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+    </header>
+
+
+    <section>
+        <h2>Contacto</h2>
+        <article>
+            <h3>Escríbenos para recibir más información sobre nuestras adopciones:</h3>
+            <form action="" id="contacto">
+                <label for="Nombre">
+                    Nombre
+                    <input id="Nombre" name="Nombre" type="text" placeholder="Nombre" onkeypress="txNombres()">
+                </label>
+
+
+                <label for="Apellido">
+                    Apellido
+                    <input id="Apellido" name="Apellido" type="text" placeholder="Apellido"onkeypress="txNombres()">
+                </label>
+
+                <label for="mail">
+                    Mail
+                    <input type="mail" name="mail" id="mail" placeholder="mail@mail.com">
+                </label>
+
+                <b>
+                    <p>¿Tienes mascotas?</p>
+                </b>
+                <label for="cant">
+                    ¿Cuantas?
+                    <input type="number" name="cant" id="cant">
+                </label>
+                <p>¿Cuáles?</p>
+                <label for="Perro" >
+                    Perro
+                    <input type="checkbox" name="Mascota" value="Perro" class="check">
+                </label>
+
+                <label for="Gato">
+                    Gato
+                    <input type="checkbox" name="Mascota" value="Gato" class="check">
+                </label>
+
+                <label for="Conejo">
+                    Conejo
+                    <input type="checkbox" name="Mascota" value="Conejo"  class="check">
+                </label>
+
+
+                <label for="Otro">
+                    Otro
+                    <input type="checkbox" name="Mascota" value="Otro"  class="check">
+                </label>
+
+                <label for="Vivienda">
+                    ¿Qué tipo de vivienda tienes?
+                    <select name="Vivienda" id="Vivienda">
+                        <option value="Departamento">Departamento</option>
+                        <option value="Casa">Casa</option>
+                        <option value="Ph">Ph</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </label>
+
+
+
+                <fieldset>
+                    <legend>¿Qué tipo de mascota te interesa adoptar?</legend>
+                    <label>
+                        Perro
+                        <input type="radio" name="Adoptar" value="Perro" id="perro">
+                    </label>
+                    <label>
+                        Gato
+                        <input type="radio" name="Adoptar" value="Gato" id="gato">
+                    </label>
+                    <label>
+                        Conejo
+                        <input type="radio" name="Adoptar" value="Conejo" id="conejo">
+                    </label>
+                    <label>
+                        Otro
+                        <input type="radio" name="Adoptar" value="Otro" id="otro">
+                    </label>
+                </fieldset>
+
+
+                <input type="submit" id="enviar">
+            </form>
+        </article>
+
+
+    </section>
+
+    <footer>
+        <img src="./imagenes/WhatsApp.ico" alt="whatsapp" width="40" height="auto" id="wsp">
+        <a href="https://www.instagram.com/arribalaspatitas/" target="_blank"><img src="./imagenes/instalogo.ico" alt="instagram" width="40" height="auto" id="ig"> </a>
+        <a href="https://twitter.com/mascotaadopcion" target="_blank"><img src="./imagenes/Twitter-logo.ico" alt="twitter" width="40" height="auto" id="twitter"> </a>
+        <p id="ubicacion"> Derechos Reservados </p>
+    </footer>
+
+</body>
+
+</html>

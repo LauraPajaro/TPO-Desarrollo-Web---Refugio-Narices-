@@ -1,0 +1,701 @@
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+:root {
+  --fuenteParrafos: 'Open Sans', sans-serif;
+
+  --claro: rgb(201, 255, 193);
+  --blanco: #ffffff;
+  --negro: #000000;
+  --verde: rgb(12, 151, 12);
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1rem = 10 px */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fuenteParrafos);
+  font-size: 1.6rem;
+  line-height: 2;
+  /*responsive {
+        display: grid;
+        align-content: space-evenly;
+        justify-content: space-between;
+        justify-items: center; 
+    }*/
+}
+
+#conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 120rem;
+  width: 70%;
+  margin: 0 auto;
+
+}
+
+nav {
+  background-color: var(--verde);
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+article {
+  background-color: var(--claro);
+  padding: 5px;
+}
+
+
+header {
+  padding-bottom: 100px;
+
+}
+
+body {
+  background-image: url(./imagenes/patita.png);
+  background-repeat: repeat;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+
+  line-height: 1.2;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  padding: 25px;
+  color: var(--blanco);
+
+}
+
+h2 {
+  padding: 15px;
+  background-color: var(--verde);
+  color: var(--blanco);
+
+}
+
+h3 {
+  padding: 20 px;
+}
+
+h4 {
+  padding: 5;
+}
+
+p {
+  color: black;
+  font-weight: bold;
+}
+
+nav {
+  display: block;
+  padding-left: 20px;
+
+}
+
+a {
+  padding-left: 10px;
+}
+
+section {
+  text-align: center;
+  height: 20%;
+}
+
+div {
+  margin-left: 40px;
+  width: 200px;
+  height: 200px;
+
+}
+
+
+ul li a {
+
+  color: var(--claro);
+  font-weight: bolder;
+  font-size: 25px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+ul li a:hover {
+  background-color: var(--claro);
+  color: var(--negro);
+
+}
+
+footer {
+  background-color: var(--verde);
+  padding: 50px;
+  text-align: center;
+  display: block;
+  height: auto;
+  width: 100%;
+
+}
+
+form label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.menuh {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.menuh li a {
+  display: block;
+  padding: 15px 20px;
+  color: var(--blanco);
+  text-decoration: none;
+
+}
+
+.menuh li:hover {
+  background-color: var(--claro);
+  color: var(--negro);
+
+}
+
+.menuv {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: var(--verde);
+
+}
+
+.menuh li:hover .menuv {
+  display: block;
+
+}
+
+.menuv li:hover {
+  background-color: var(--verde);
+  color: var(--negro);
+}
+
+.menuv li a {
+  display: block;
+  color: var(--blanco);
+  padding: 15px 15px 15px 20px;
+
+}
+
+.slide li img {
+  width: 100%;
+  height: 500px;
+}
+
+.slide li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: 0.7s;
+
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  list-style: none;
+}
+
+
+.central {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 350px;
+}
+
+
+.slide li:first-child {
+  opacity: 1;
+}
+
+.botones {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50px;
+  background-color: var(--verde);
+  line-height: 50px;
+  font-size: 22px;
+  list-style: none;
+
+}
+
+
+.slide li:target {
+  opacity: 1;
+
+
+}
+
+.titulo {
+  text-align: center;
+  font-size: 40px;
+  color: var(--blanco);
+  padding: 15px;
+  margin-bottom: 50px;
+  background-color: var(--verde);
+}
+
+#Adopta {
+  background-color: var(--claro);
+}
+
+.perros {
+  display: inline-flex;
+}
+
+.gatos {
+  display: inline-flex;
+
+}
+
+
+/** Contacto **/
+
+.formulario {
+  background-color: var(--blanco);
+  margin: -5rem auto 0 auto;
+  width: 95%;
+  padding: 5rem;
+}
+
+.campo {
+  display: flex;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.campo__label {
+  flex: 0 0 9rem;
+  text-align: right;
+  padding-right: 2rem;
+}
+
+.campo__field {
+  flex: 1;
+  border: 1px solid var(--gris);
+}
+
+.campo__field--textarea {
+  height: 200px;
+}
+
+
+/** FormulariodeAdopcion **/
+
+#fdadopcion {
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+.formularioadopcion {
+  display: grid;
+  gap: 30px;
+  justify-items: center;
+  background-color: var(--claro);
+  padding-bottom: 50px;
+}
+
+input {
+  margin-top: 0px;
+  width: 20%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--blanco)
+}
+
+#enviar {
+  font-size: 20px;
+  background-color: var(--verde);
+  width: 20%;
+  color: var(--blanco);
+  cursor: pointer;
+
+}
+
+
+
+
+#enviar:hover {
+  background-color: var(--blanco);
+  color: var(--verde);
+  transition: 0.2s;
+
+
+}
+
+
+#textarea {
+  margin-bottom: 20px;
+  border-radius: 20px;
+  margin-top: 2px;
+
+
+}
+
+
+#inputnombre {
+  margin-top: 60px;
+
+}
+
+#textadopt {
+  margin-bottom: -200px;
+
+
+}
+
+#elegirmascota {
+  display: flex;
+  margin-top: 20px;
+  width: 200px;
+  font-size: 20px;
+  border-radius: 20px;
+
+}
+
+
+.containerMascotas {
+  position: relative;
+  width: 30%;
+}
+
+.imagenMascotas {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlayMascotas {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #34a83ace;
+  margin-left: 0;
+}
+
+.enlaceMascota {
+  text-decoration: none;
+  color: var(--blanco);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 20px;
+
+}
+
+.textoMascotas {
+  color: var(--blanco);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+.containerMascotas:hover .overlayMascotas {
+  opacity: 1;
+}
+
+.divMascotas {
+  margin-left: 0;
+  display: flex;
+  width: 100%;
+}
+
+.overlayConsejos {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #34a83ace;
+  margin-left: 0;
+}
+
+.containerMascotas:hover .overlayConsejos {
+  opacity: 1;
+}
+
+.enlaceNosotros {
+  text-decoration: none;
+  color: var(--negro);
+  font-size: large;
+  font-weight: bold;
+}
+
+.enlaceNosotros:hover {
+  color: var(--verde);
+}
+
+
+#Vivienda {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 10%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+
+}
+
+#contacto {
+  padding-bottom: 80px;
+  padding-top: 30px;
+}
+
+.check {
+  width: 90px;
+  height: 20px;
+}
+
+fieldset input {
+  width: 70px;
+  display: inline-block;
+  padding: 10px;
+  height: 22px;
+
+}
+
+
+@media (max-width: 1200px) {
+
+  #conteiner2 {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    position: relative;
+    justify-content: center;
+    height: auto;
+    gap: 20px;
+
+  }
+
+
+}
+
+
+
+@media (max-width: 1200px) {
+
+  #conteiner1 {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    position: relative;
+    justify-content: center;
+    height: auto;
+    gap: 20px;
+
+  }
+
+
+}
+
+
+
+@media (max-width: 900px) {
+
+  #conteiner2 {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    position: relative;
+    justify-content: center;
+    height: auto;
+    gap: 20px;
+
+  }
+
+
+}
+
+
+
+@media (max-width: 900px) {
+
+  #conteiner1 {
+    display: grid;
+    grid-template-columns: 30% 30%;
+    position: relative;
+    justify-content: center;
+    height: auto;
+    gap: 20px;
+
+  }
+
+
+}
+
+@media (max-width: 600px) {
+
+  #conteiner2 {
+    display: grid;
+    grid-template-columns: 70%;
+    position: relative;
+    justify-content: center;
+    height: auto;
+    gap: 20px;
+
+  }
+
+
+}
+
+
+
+@media (max-width: 600px) {
+
+  #conteiner1 {
+    display: grid;
+    grid-template-columns: 70%;
+    gap: 20px;
+    position: relative;
+    justify-content: center;
+    height: auto;
+
+  }
+
+
+}
+
+
+
+@media (max-width: 1200px) {
+  .menuh {
+
+
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .menuv {
+
+
+    display: none;
+
+    width: 68%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+
+
+  }
+}
+
+
+@media (max-width: 1200px) {
+  #adoptaunamascota {
+    margin-top: 300px;
+
+
+  }
+}
+
+@media (max-width: 962px) {
+  .menuv {
+    display: none;
+    width: 61%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Consejos */
+
+.tituloConsejo {
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  margin-top: 5px;
+  margin-bottom: 10x;
+}
+
+.consejoArticulo {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  height: auto;
+  gap: 30px;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+
+.imagenAleatoria {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.consejoInfo {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: left;
+}

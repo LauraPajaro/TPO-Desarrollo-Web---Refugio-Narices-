@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" type="image/jpg" href="imagen.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagenes/dog-nose.ico">
+    <title>Gatos</title>
+</head>
+
+<body>
+    <script src="jsp.js"></script>
+    <header>
+
+        <div id="conteiner">
+            <nav>
+                <ul class="menuh">
+                    <h2>Refugio Narices</h2>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Adoptar</a>
+                        <ul class="menuv">
+                            <li><a href="perros.html">Perros</a></li>
+                            <li><a href="gatos.html">Gatos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="consejos.html">Consejos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+    </header>
+
+
+    <section id="Adopta">
+        <h2 class="titulo">¡Adoptame!</h2>
+        <article>
+            <div class="central">
+                <ul class="slide" id="Gatos">
+                    <li id="slide1"><img src="./imagenes/gato1.jpg"></li>
+                    <li id="slide2"><img src="./imagenes/gato2.jpg"></li>
+                    <li id="slide3"><img src="./imagenes/gato3.jpg"></li>
+                    <li id="slide4"><img src="./imagenes/gato4.jpg"></li>
+                </ul>
+                    
+                <ul class="botones" id="botgatos">
+                    <li><a href="#slide1">Saltarin</a> </li>
+                    <li><a href="#slide2">Felix</a> </li>
+                    <li><a href="#slide3">Rocky</a></li>
+                    <li><a href="#slide4">Tom</a></li>
+                </ul>
+        </article>
+
+
+        <h2 id="fdadopcion"  class="titulo">Formulario de adopción</h2>
+
+        <form action="" method="get" class="formularioadopcion" id="formularioadopciongato">
+
+            <input type="text"   placeholder="ingrese su nombre..." autofocus name="nombre" id="inputnombre" size="40px" onkeypress="txNombres()" > 
+                <input type="text" name="apellido"  placeholder="ingrese su apellido..." id="inputapellido" size="40px" onkeypress="txNombres()" > 
+                <input type="text"name="telefono"  placeholder="ingrese su numero de telefono o whatsapp..."  id="inputtelefono" size="40px" onkeypress="ValidaSoloNumeros()">   
+                <input type="text"name="direccion"  placeholder="ingrese su direccion..."  id="inputdireccion" size="40px"  > 
+                <input type="text" name="ciudad" id="inputciudad" size="40px"  placeholder="Localidad" onkeypress="txNombres()" > 
+                <input type="text" name="dni" id="inputdni" size="40px"  placeholder="Ingrese su DNI..."  onkeypress="ValidaSoloNumeros()" > 
+                <input type="email" name="email"  placeholder="Ingrese su Email..." id="inputemail" >  
+
+            <label for="mascota">
+                ¿Qué mascota quieres adoptar?
+                <select name="mascota" id="elegirmascota" >
+                    <option value="Saltarin">Saltarin</option>
+                    <option value="Felix">Felix</option>
+                    <option value="Rocky">Rocky</option>
+                    <option value="Tom">Tom</option>
+                </select>
+            </label>
+
+            <label for="textarea" id="textadopt"> Porque quieres adoptar?</label>
+
+            <textarea id="textarea" name="textarea" rows="10" cols="50" > </textarea>
+
+            <input type="submit" id="enviar" >
+
+    </section>
+
+    <footer>
+        <img src="./imagenes/WhatsApp.ico" alt="whatsapp" width="40" height="auto" id="wsp">
+        <a href="https://www.instagram.com/arribalaspatitas/" target="_blank"><img src="./imagenes/instalogo.ico" alt="instagram" width="40" height="auto" id="ig"> </a>
+        <a href="https://twitter.com/mascotaadopcion" target="_blank"><img src="./imagenes/Twitter-logo.ico" alt="twitter" width="40" height="auto" id="twitter"> </a>
+        <p id="ubicacion"> Derechos Reservados </p>
+    </footer>
+
+</body>
+
+</html>
